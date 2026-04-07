@@ -1,1 +1,421 @@
+#background-slider {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slider-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.slider-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* Optional: Add a transition for a smooth effect if you change the filter on hover/etc. */
+  transition: filter 0.3s ease-in-out;
+}
+
+/* Slika se prikazuje samo na desktopu */
+@media only screen and (min-width: 769px) {
+  .slider-image {
+    display: block;
+  }
+  
+  .slider-video {
+    display: none !important; /* Sakrij video na desktopu */
+  }
+}
+
+/* Video se prikazuje samo na mobilnim ureÄ‘ajima */
+@media only screen and (max-width: 768px) {
+  .slider-image {
+    display: none !important; /* Sakrij sliku na mobilnim */
+  }
+  
+  .slider-video {
+    display: block !important; /* PrikaÅ¾i video na mobilnim */
+    position: relative;
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
+.slider-title {
+  position: absolute;
+  z-index: 10;
+  color: var(--primary-color);
+  font-size: 50px;
+  text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black,
+    1px 1px black, -1px 1px black, 1px -1px black, -1px -1px black;
+  text-transform: none;
+}
+
+.logo-futer {
+  min-width: 100px;
+}
+
+
+.bg-primary {
+  background-color: #ffffff !important;
+}
+
+.footer-menu-added {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-container {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  position: relative;
+  margin: 0px auto;
+}
+
+.services-container ul {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-weight: 100;
+  color: #444444;
+  text-shadow: 0 0 2px #fff;
+}
+
+.left-section,
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-section,
+.right-section,
+.right-section {
+  width: 33%;
+}
+
+.left-section span,
+.right-section span {
+  font-size: 24px;
+  color: #ffc549;
+  margin-bottom: 20px;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 50px;
+  padding-top: 150px;
+}
+
+.middle-section {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+
+.top-section h2 {
+  color: #a94f1e;
+  font-size: 56px;
+  /* margin-bottom: 10px; */
+}
+
+.top-section h3 {
+  font-size: 33px;
+  color: #c48a1b;
+  text-transform: none;
+  margin-top: 36px;
+  font-family: none;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  width: 60%;
+}
+
+.menu-section div {
+  width: 100%;
+}
+
+.menu-section ul {
+  list-style: disc;
+  list-style-position: inside;
+  padding: 0;
+  /* width: 55%; */
+  margin: 0px auto;
+  font-size: 20px;
+}
+.menu-section b {
+  color: #a94f1e;
+}
+
+.menu-section p {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-size: 21px;
+}
+
+.divider {
+  margin: 40px auto;
+  width: 80%;
+  border-top: 3px solid #d1b36d;
+  margin-bottom: 250px;
+}
+
+.top-left,
+.top-right,
+.bottom-left,
+.bottom-right,
+.ornament-top,
+.ornament-bottom {
+  position: absolute;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.ornament-top {
+  top: 0;
+  left: 50;
+}
+
+.ornament-bottom {
+  bottom: 0;
+  left: 50;
+}
+
+/* Luka dodao */
+
+.menu-shortcuts .btn-outline-dark {
+  border-color: #00303d; /* boja bordure */
+  color: #00303d; /* boja slova */
+}
+
+.menu-shortcuts .btn-outline-dark:hover,
+.menu-shortcuts .btn-outline-dark:focus {
+  background-color: #00303d; /* pozadina na hover */
+  color: #fff; /* bela slova */
+  border-color: #00303d; /* zadrÅ¾i istu boju bordure */
+}
+
+#lux-meni-svadba-first .menu-section-image img,
+#lux-meni-svadba-second .menu-section-image img,
+#delux-menu-svadba-first .menu-section-image img,
+#delux-menu-svadba-second .menu-section-image img,
+#delux-menu-svadba-third .menu-section-image img,
+#classic-menu-svadba-first .menu-section-image img,
+#buffet-menu-svadba-1-first .menu-section-image img,
+#buffet-menu-svadba-2-first .menu-section-image img {
+  transform: rotate(20deg);
+  height: 400px;
+  object-fit: cover;
+}
+
+#lux-meni-svadba-third .menu-section-image img,
+#delux-menu-svadba-third .menu-section-image img,
+#delux-menu-proslava-third .menu-section-image img,
+#buffet-menu-svadba-1-second .menu-section-image img,
+#buffet-menu-svadba-2-second .menu-section-image img {
+  width: 400px;
+  margin-top: 75px;
+}
+
+.last,
+.second-last {
+  list-style: none;
+  margin-top: 30px;
+}
+
+#lux-meni-svadba-first .menu-section,
+#lux-meni-svadba-second .menu-section,
+#lux-meni-svadba-third .menu-section,
+#lux-meni-svadba-forth .menu-section,
+#lux-meni-svadba-sixth .menu-section,
+#lux-meni-svadba-seventh .menu-section,
+#delux-menu-svadba-first .menu-section,
+#delux-menu-svadba-second .menu-section,
+#delux-menu-svadba-third .menu-section,
+#delux-menu-svadba-forth .menu-section,
+#delux-menu-svadba-sixth .menu-section,
+#delux-menu-svadba-seventh .menu-section,
+#classic-menu-svadba-first .menu-section,
+#classic-menu-svadba-second .menu-section,
+#classic-menu-svadba-third .menu-section,
+#classic-menu-svadba-forth .menu-section,
+#classic-menu-svadba-fifth .menu-section,
+#classic-menu-svadba-sixth .menu-section,
+#delux-menu-proslava-third .menu-section,
+#delux-menu-proslava-fifth .menu-section,
+#buffet-menu-svadba-1-first .menu-section,
+#buffet-menu-svadba-1-second .menu-section,
+#buffet-menu-svadba-1-forth .menu-section,
+#buffet-menu-svadba-1-fifth .menu-section,
+#buffet-menu-svadba-1-sixth .menu-section,
+#buffet-menu-svadba-2-first .menu-section,
+#buffet-menu-svadba-2-second .menu-section,
+#buffet-menu-svadba-2-forth .menu-section,
+#buffet-menu-svadba-2-fifth .menu-section,
+#buffet-menu-svadba-2-sixth .menu-section,
+#buffet-menu-svadba-2-seventh .menu-section {
+  width: 100%;
+}
+
+#lux-meni-svadba-third .left-section ul,
+#lux-meni-svadba-third .left-section p,
+#delux-menu-svadba-third .left-section ul,
+#delux-menu-svadba-third .left-section p {
+  text-align: left;
+}
+
+#lux-meni-svadba-third .right-section ul,
+#lux-meni-svadba-third .right-section p,
+#delux-menu-svadba-third .right-section ul,
+#delux-menu-svadba-third .right-section p {
+  text-align: right;
+}
+
+#lux-meni-svadba-third .right-section ul,
+#delux-menu-svadba-third .right-section ul {
+  margin: 0px;
+}
+
+#lux-meni-svadba-forth .menu-section-image img,
+#lux-meni-svadba-fifth .menu-section-image img,
+#lux-meni-svadba-sixth .menu-section-image img,
+#delux-menu-svadba-forth .menu-section-image img,
+#delux-menu-svadba-fifth .menu-section-image img,
+#delux-menu-svadba-sixth .menu-section-image img,
+#classic-menu-svadba-third .menu-section-image img,
+#classic-menu-svadba-forth .menu-section-image img,
+#delux-menu-proslava-fifth .menu-section-image img,
+#buffet-menu-svadba-1-third .menu-section-image img,
+#buffet-menu-svadba-1-forth .menu-section-image img,
+#buffet-menu-svadba-2-third .menu-section-image img,
+#buffet-menu-svadba-2-forth .menu-section-image img,
+#buffet-menu-svadba-2-fifth .menu-section-image img {
+  height: 600px;
+  width: 500px;
+}
+
+#lux-meni-svadba-seventh .left-section,
+#lux-meni-svadba-seventh .right-section,
+#delux-menu-svadba-seventh .left-section,
+#delux-menu-svadba-seventh .right-section,
+#classic-menu-svadba-fifth .left-section,
+#classic-menu-svadba-fifth .right-section,
+#buffet-menu-svadba-1-fifth .left-section,
+#buffet-menu-svadba-1-fifth .right-section,
+#buffet-menu-svadba-2-sixth .left-section,
+#buffet-menu-svadba-2-sixth .right-section {
+  width: 45%;
+}
+
+#lux-meni-svadba-eight .left-section,
+#delux-menu-svadba-eight .left-section,
+#classic-menu-svadba-sixth .left-section,
+#buffet-menu-svadba-1-seventh .left-section,
+#buffet-menu-svadba-2-seventh .left-section {
+  width: 100%;
+}
+
+#lux-meni-svadba-eight ul,
+#delux-menu-svadba-eight ul,
+#classic-menu-svadba-sixth ul,
+#buffet-menu-svadba-1-seventh ul,
+#buffet-menu-svadba-2-seventh ul {
+  margin-bottom: 20px;
+}
+
+.split-li {
+  margin-top: 40px;
+}
+
+.menu-shortcuts a {
+  margin-bottom: 25px;
+}
+
+.navbar-submenu {
+  background-color: var(--bg-primary);
+  border: 2px solid var(--primary-color);
+  /* outline: 2px solid var(--primary-color); */
+  z-index: 1050 !important;
+  position: absolute !important;
+  margin-top: 0.5rem;
+}
+
+
+@media only screen and (max-width: 940px) {
+  .middle-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .right-section span {
+    margin-top: 50px;
+  }
+
+  .left-section p,
+  .right-section p {
+    text-align: center !important;
+  }
+
+  .left-section ul,
+  .right-section ul {
+    text-align: center !important;
+  }
+
+  .top-section h3 {
+    text-align: center;
+    padding: 0px 60px;
+  }
+
+  .top-section h2 {
+    text-align: center !important;
+  }
+
+  
+}
 
