@@ -1279,8 +1279,8 @@ iconify-icon.video-icon {
 }
 /* Hover efekat */
 .cta .btn:hover {
-  background: #fff;
-  color: #5a4d3e;
+  background: linear-gradient(135deg, #f0d48a, #d0ab67, #b8965a);
+
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
