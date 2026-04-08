@@ -2419,3 +2419,17 @@ html {
     width: 80%; /* 1 velika slika */
   }
 }
+
+.submenu {
+  margin-bottom: 15px;
+}
+
+.submenu h5 {
+  font-size: 14px;
+  color: #c9a96e;
+  margin-bottom: 5px;
+}
+
+.submenu ul {
+  padding-left: 15px;
+}
