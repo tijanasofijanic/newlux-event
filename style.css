@@ -2339,7 +2339,7 @@ html {
 .slider-track {
   display: flex;
   height: 100%;
-  animation: scrollSlider 20s linear infinite;
+  animation: scrollSlider 10s linear infinite;
 }
 
 /* SLIKE */
