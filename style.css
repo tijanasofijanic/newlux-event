@@ -2290,3 +2290,127 @@ html {
   }
 
 }
+
+
+
+
+/* LAYOUT */
+.hero-slider {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* LIJEVA STRANA */
+.hero-left {
+  width: 40%;
+  padding: 80px;
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.hero-left h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  color: #0f2b2e;
+}
+
+.hero-left p {
+  text-align: justify;
+}
+
+
+/* DESNA STRANA */
+.hero-right {
+  width: 60%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* TRACK */
+.slider-track {
+  display: flex;
+  height: 100%;
+  animation: scrollSlider 20s linear infinite;
+}
+
+/* SLIKE */
+.slider-track img {
+  width: 33.33%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+/* ANIMACIJA */
+@keyframes scrollSlider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.slider-track img {
+  width: 33.33%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 10px;
+}
+
+
+/* DESKTOP (ostaje isto) */
+.hero-slider {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* TABLET I MOBILNI */
+@media (max-width: 992px) {
+  .hero-slider {
+    flex-direction: column; /* tekst gore, slider dole */
+    height: auto;
+  }
+
+  .hero-left {
+    width: 100%;
+    padding: 40px 25px;
+    text-align: center;
+  }
+
+  .hero-left h1 {
+    font-size: 34px;
+  }
+
+  .hero-right {
+    width: 100%;
+    height: 350px;
+  }
+
+  .slider-track img {
+    width: 50%; /* 2 slike */
+  }
+}
+
+/* MOBILNI */
+@media (max-width: 576px) {
+  .hero-left h1 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+
+
+  .hero-right {
+    height: 260px;
+  }
+
+  .slider-track img {
+    width: 80%; /* 1 velika slika */
+  }
+}
