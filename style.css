@@ -1045,7 +1045,7 @@ iconify-icon.video-icon {
 }
 
 .chat-option.call {
-  background: #007bff;
+  background: linear-gradient(135deg, #b8965a, #d0ab67, #f0d48a);
 }
 
 .chat-option.whatsapp {
@@ -1616,16 +1616,16 @@ iconify-icon.video-icon {
 
 /* BUTTON */
 .btn-gold {
-  background: #d0ab67;
-  color: #000;
+  background: linear-gradient(135deg, #b8965a, #d0ab67, #f0d48a);
+  color: white;
   padding: 8px 20px;
   border-radius: 25px;
   transition: 0.3s;
 }
 
 .btn-gold:hover {
-  background: #E58A4E;
-  color: #000;
+  background: linear-gradient(135deg, #f0d48a, #d0ab67, #b8965a);
+  color: white;
 }
 
 /* MOBILE */
