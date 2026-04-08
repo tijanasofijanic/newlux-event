@@ -208,10 +208,15 @@ h6 {
   box-shadow: none;
 }
 
-.btn-primary:hover {
+.btn-primary{
   background-color: white;
+  border:1px solid #00303d;
   color:#00303d;
-  border:px solid #00303d;
+}
+.btn-primary:hover {
+  background-color: #02556c;
+  color:white;
+  border:1px solid #02556c;
 }
 
 /*--------------------------------------------------------------
