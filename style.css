@@ -976,7 +976,7 @@ iconify-icon.video-icon {
 .chat-button {
   width: 60px;
   height: 60px;
-  background: #00303d;
+  background: linear-gradient(135deg, #b8965a, #d0ab67, #f0d48a);
   color: white;
   font-size: 26px;
   display: flex;
@@ -1232,7 +1232,7 @@ iconify-icon.video-icon {
 
 /* ===== CTA SECTION ===== */
 .cta {
-  background: #7d7266;
+  background: #00303d;
   color: #fff;
   padding: 80px 20px;
   text-align: center;
@@ -1274,8 +1274,9 @@ iconify-icon.video-icon {
   border-radius: 50px;
   font-weight: 600;
   transition: all 0.3s ease;
+  background: linear-gradient(135deg, #b8965a, #d0ab67, #f0d48a);
+  border:1px solid #d0ab67;
 }
-
 /* Hover efekat */
 .cta .btn:hover {
   background: #fff;
