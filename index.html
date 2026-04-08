@@ -61,8 +61,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="style.css">
 
-  <!-- PRELOAD HERO IMAGE -->
-  <link rel="preload" as="image" href="images/newlux-event-centar.jpg">
+ 
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
 
@@ -122,7 +121,7 @@
       </div>
 
       <!-- CTA dugme -->
-      <a href="contact.html" class="btn btn-gold d-none d-lg-block">
+      <a href="tel:+381607171153" class="btn btn-gold d-none d-lg-block">
         Rezervacija
       </a>
 
@@ -132,12 +131,22 @@
 
 <!-- HERO -->
 <section class="hero">
+
+  <!-- VIDEO -->
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="videos/lux-video.webm" type="video/webm">
+  </video>
+
+  <!-- OVERLAY (zatamnjenje) -->
+  <div class="hero-overlay"></div>
+
+  <!-- CONTENT -->
   <div class="hero-content">
     <h1 class="display-3 mb-3">Najlepše mesto za vaše venčanje</h1>
     <p class="mb-4">Luksuzan prostor za nezaboravne proslave u Beogradu</p>
-    <a href="contact.html" class="btn btn-gold me-2">Rezerviši termin</a>
-
+    <a href="tel:+381607171153" class="btn btn-gold me-2">Rezerviši termin</a>
   </div>
+
 </section>
 
 <section class="py-5">
@@ -220,7 +229,7 @@
 
         </div>
 
-        <a href="aboutus.html" class="btn btn-gold mt-4">Saznaj više</a>
+        <a href="aboutus.html" class="btn btn-primary mt-4">Saznaj više</a>
       </div>
 
     </div>
@@ -234,10 +243,12 @@
 
     <div class="row g-4">
 
+
+
       <div class="col-md-3">
         <a href="vencanja.html" class="service-card">
           <img src="images/team2.jpg" alt="Venčanja">
-          <div class="service-overlay">
+          <div class="service-content">
             <h4>Venčanja</h4>
           </div>
         </a>
@@ -246,7 +257,7 @@
       <div class="col-md-3">
         <a href="korporativne-proslave.html" class="service-card">
           <img src="images/team1.jpg" alt="Korporativne">
-          <div class="service-overlay">
+         <div class="service-content">
             <h4>Korporativne
               proslave</h4>
           </div>
@@ -254,9 +265,9 @@
       </div>
 
       <div class="col-md-3">
-        <a href="rodjendani.html" class="service-card">
+        <a href="rodjendanske-proslave.html" class="service-card">
           <img src="images/team5.jpg" alt="Rođendani">
-          <div class="service-overlay">
+          <div class="service-content">
             <h4>Rođendani</h4>
           </div>
         </a>
@@ -265,7 +276,7 @@
       <div class="col-md-3">
         <a href="krstenja.html" class="service-card">
           <img src="images/team3.jpg" alt="Krštenja">
-          <div class="service-overlay">
+          <div class="service-content">
             <h4>Krštenja</h4>
           </div>
         </a>
@@ -284,7 +295,7 @@
     <p class="mb-4">
      Kontaktirajte nas i obezbedite savršen datum
     </p>
-    <a href="contact.html" class="btn btn-light btn-lg px-5">
+    <a href="tel:+381607171153" class="btn btn-light btn-lg px-5">
      KONTAKTIRAJTE NAS
     </a>
   </div>
@@ -296,49 +307,122 @@
 
     <h2 class="text-center mb-5">Šta kažu naši klijenti</h2>
 
-    <div class="row g-4">
+   <div class="swiper testimonials-slider">
+  <div class="swiper-wrapper">
 
       <!-- 1 -->
-      <div class="col-md-4">
-        <div class="testimonial-card">
-          <p class="testimonial-text">
-            "Sve je bilo savršeno! Organizacija, dekoracija i osoblje su nadmašili sva očekivanja."
-          </p>
-          <div class="testimonial-author">
-            <strong>Marija & Nikola</strong>
-            <span>Venčanje</span>
-          </div>
-        </div>
-      </div>
+  <div class="swiper-slide">
+  <div class="testimonial-card">
+    <p class="testimonial-text">
+      "Čist profesionalnizam. Svaka čast, sve preporuke."
+    </p>
+    <div class="testimonial-author">
+      <strong>Aleksandra Lacković</strong>
+      <span>⭐⭐⭐⭐⭐</span>
+    </div>
+  </div>
+</div>
 
       <!-- 2 -->
-      <div class="col-md-4">
+      <div class="swiper-slide">
         <div class="testimonial-card">
           <p class="testimonial-text">
-            "Profesionalnost na najvišem nivou. Gosti su oduševljeni prostorom i uslugom."
+            "Ambijent prelep,osoblje vrlo profesionalno i ljubazno!"
           </p>
           <div class="testimonial-author">
-            <strong>Jelena Petrović</strong>
-            <span>Rođendan</span>
+            <strong>Teodora Dosen</strong>
+            <span>⭐⭐⭐⭐⭐</span>
           </div>
         </div>
       </div>
 
       <!-- 3 -->
-      <div class="col-md-4">
+      <div class="swiper-slide">
         <div class="testimonial-card">
           <p class="testimonial-text">
-            "Definitivno najbolji event centar u Beogradu. Sve preporuke!"
+            "Odličan ambijent. Ukusna hrana. Dobra usluga."
           </p>
           <div class="testimonial-author">
-            <strong>Marko Jovanović</strong>
-            <span>Korporativni događaj</span>
+            <strong>Ankica Jovanov</strong>
+            <span>⭐⭐⭐⭐⭐</span>
           </div>
         </div>
       </div>
 
+            <!-- 4 -->
+      <div class="swiper-slide">
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "Odličan ambient za sve vrste proslava."
+          </p>
+          <div class="testimonial-author">
+            <strong>Dejan Erić (Era)</strong>
+            <span>⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
+      </div>
+            <!-- 5 -->
+      <div class="swiper-slide">
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "Šta reći, objekat predivan, parking velik. Što je najbitnije hrana ukusna konobari ljubazni. Sve pohvale."
+          </p>
+          <div class="testimonial-author">
+            <strong>Zoran Bojović</strong>
+            <span>⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
+      </div>
+                <!--6  -->
+     <div class="swiper-slide">
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "Lepo mesto velika sala za proslave usluga super hrana super,ali ne bas lep prilaz do restorana."
+          </p>
+          <div class="testimonial-author">
+            <strong>Dragan S.</strong>
+            <span>⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
+      </div>
+      <!-- 7  -->
+      <div class="swiper-slide">
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "Krštenje, smo imali. Sve perfektno, enterijer, hrana, usluga. Tako je lepo videti to u Beogradu. Sve preporuke!"
+          </p>
+          <div class="testimonial-author">
+            <strong>Dragica Solak</strong>
+            <span>⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
+      </div>
+      <!-- 8  -->
+      <div class="swiper-slide">
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "Najlepša sala u Beogradu!"
+          </p>
+          <div class="testimonial-author">
+            <strong>Marina Marinčić</strong>
+            <span>⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
+      </div>
+          <!-- 9 -->
+      <div class="swiper-slide">
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "Savršen prostor za proslavu obezbedjen parking ljubazno osoblje prelepa hrana spoljni prostor savršen za vencanje na otvorenom. Jednom recju ako zelite savrsenstvo ovo je pravo mesto za vas"
+          </p>
+          <div class="testimonial-author">
+            <strong>Ivana Petrović</strong>
+            <span>⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
+      </div>
     </div>
-
+   </div>
   </div>
 </section>
 <!-- CONTACT / MAP FULL WIDTH -->
@@ -392,7 +476,7 @@
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         startCounter(entry.target);
-        observer.unobserve(entry.target); // da se ne pokreće opet
+        observer.unobserve(entry.target); 
       }
     });
   }, {
@@ -433,6 +517,52 @@
     const box = document.getElementById("chatBox");
     box.style.display = box.style.display === "block" ? "none" : "block";
   }
+</script>
+<script>
+  const infoBoxes = document.querySelectorAll('.info-box');
+
+const observerInfo = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+
+      // delay za "jedan po jedan" efekat
+      setTimeout(() => {
+        entry.target.classList.add('show');
+      }, index * 150);
+
+    }
+  });
+}, {
+  threshold: 0.3
+});
+
+infoBoxes.forEach(box => {
+  observerInfo.observe(box);
+});
+</script>
+<script>
+  const testimonialSwiper = new Swiper(".testimonials-slider", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: true,
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 2
+    },
+    992: {
+      slidesPerView: 3
+    }
+  }
+});
 </script>
 </body>
 </html>

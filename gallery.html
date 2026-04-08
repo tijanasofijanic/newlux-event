@@ -109,7 +109,7 @@
       </div>
 
       <!-- CTA dugme -->
-      <a href="contact.html" class="btn btn-gold d-none d-lg-block">
+      <a href="tel:+381607171153" class="btn btn-gold d-none d-lg-block">
         Rezervacija
       </a>
 
@@ -128,7 +128,7 @@
 <section class="gallery-section bg-white">
   <div class="container">
 
-    <div class="row g-4">
+    <div class="row g-4" id="gallery">
 
       <!-- 1 -->
       <div class="col-6 col-md-4 col-lg-3">
@@ -310,10 +310,64 @@
         </a>
       </div>
 
+      <!-- 21 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="images/nova-galerija/post-21-min.jpg" class="glightbox">
+          <div class="gallery-item">
+            <img src="images/nova-galerija/post-21-min.jpg" alt="Luksuzna proslava" loading="lazy">
+          </div>
+        </a>
+      </div>
+       <!-- 22 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="images/nova-galerija/post-22-min.jpg" class="glightbox">
+          <div class="gallery-item">
+            <img src="images/nova-galerija/post-22-min.jpg" alt="Luksuzna proslava" loading="lazy">
+          </div>
+        </a>
+      </div>
+       <!-- 23 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="images/nova-galerija/post-23-min.jpg" class="glightbox">
+          <div class="gallery-item">
+            <img src="images/nova-galerija/post-23-min.jpg" alt="Luksuzna proslava" loading="lazy">
+          </div>
+        </a>
+      </div>
+       <!-- 24 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="images/nova-galerija/post-24-min.jpg" class="glightbox">
+          <div class="gallery-item">
+            <img src="images/nova-galerija/post-24-min.jpg" alt="Luksuzna proslava" loading="lazy">
+          </div>
+        </a>
+      </div>
+       <!-- 25 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="images/nova-galerija/post-25-min.jpg" class="glightbox">
+          <div class="gallery-item">
+            <img src="images/nova-galerija/post-25-min.jpg" alt="Luksuzna proslava" loading="lazy">
+          </div>
+        </a>
+      </div>
+
+        <!-- 2 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="images/nova-galerija/post-26-min.jpg" class="glightbox">
+          <div class="gallery-item">
+            <img src="images/nova-galerija/post-26-min.jpg" alt="Luksuzna proslava" loading="lazy">
+          </div>
+        </a>
+      </div>
+
     </div>
   </div>
 </section>
-
+<div class="d-flex justify-content-center">
+  <nav>
+    <ul class="pagination" id="pagination"></ul>
+  </nav>
+</div>
   <!-- CTA Section -->
 
 <section class="cta text-center">
@@ -322,7 +376,7 @@
     <p class="mb-4">
      Kontaktirajte nas i rezervišite datum za vaš poseban događaj
     </p>
-    <a href="contact.html" class="btn btn-light btn-lg px-5">
+    <a href="tel:+381607171153" class="btn btn-light btn-lg px-5">
      KONTAKTIRAJTE NAS
     </a>
   </div>
@@ -330,9 +384,6 @@
 
 <!-- FOOTER -->
 <div id="footer"></div>
-
-<!-- HEADER / FOOTER -->
-<script src="js/header.js"></script>
 
 
 <!-- Bootstrap JS -->
@@ -384,6 +435,53 @@
     const box = document.getElementById("chatBox");
     box.style.display = box.style.display === "block" ? "none" : "block";
   }
+</script>
+<script>
+  const itemsPerPage = 12;
+const gallery = document.getElementById("gallery");
+const items = gallery.querySelectorAll(".col-6");
+const pagination = document.getElementById("pagination");
+
+let currentPage = 1;
+
+function showPage(page) {
+  currentPage = page;
+
+  const start = (page - 1) * itemsPerPage;
+  const end = start + itemsPerPage;
+
+  items.forEach((item, index) => {
+    item.style.display = (index >= start && index < end) ? "block" : "none";
+  });
+
+  renderPagination();
+}
+
+function renderPagination() {
+  const pageCount = Math.ceil(items.length / itemsPerPage);
+  pagination.innerHTML = "";
+
+  for (let i = 1; i <= pageCount; i++) {
+    const li = document.createElement("li");
+    li.className = "page-item " + (i === currentPage ? "active" : "");
+
+    const a = document.createElement("a");
+    a.className = "page-link";
+    a.href = "#";
+    a.innerText = i;
+
+    a.addEventListener("click", (e) => {
+      e.preventDefault();
+      showPage(i);
+    });
+
+    li.appendChild(a);
+    pagination.appendChild(li);
+  }
+}
+
+// INIT
+showPage(1);
 </script>
 </body>
 </html>
