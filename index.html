@@ -169,22 +169,23 @@
     <a class="btn btn-primary mt-3" href="gallery.html" style="width:250px">Pogledajte više</a>
   </div>
 
-  <div class="hero-right">
-    <div class="slider-track">
-  <img src="images/banner-img1.jpg" />
-  <img src="images/banner-img2.jpg" />
-  <img src="images/banner-img3.jpg" />
-  <img src="images/banner-img4.jpg" />
-  <img src="images/banner-img5.jpg" />
-  <img src="images/banner-img6.jpg" />
+<div class="hero-right">
 
-  <!-- DUPLIKAT -->
-  <img src="images/banner-img1.jpg" />
-  <img src="images/banner-img2.jpg" />
-  <img src="images/banner-img3.jpg" />
-  <img src="images/banner-img4.jpg" />
-  <img src="images/banner-img5.jpg" />
-  <img src="images/banner-img6.jpg" />
+  <button class="nav prev">&#10094;</button>
+
+  <div class="slider-window">
+    <div class="slider-track">
+      <img src="images/banner-img1.jpg" />
+      <img src="images/banner-img2.jpg" />
+      <img src="images/banner-img3.jpg" />
+      <img src="images/banner-img4.jpg" />
+      <img src="images/banner-img5.jpg" />
+      <img src="images/banner-img6.jpg" />
+    </div>
+  </div>
+
+  <button class="nav next">&#10095;</button>
+
 </div>
 </section>
 
@@ -603,7 +604,73 @@ infoBoxes.forEach(box => {
   }
 });
 </script>
+<script>
+const track = document.querySelector(".slider-track");
+const images = document.querySelectorAll(".slider-track img");
 
+let index = 0;
+let autoplayInterval;
+
+/* koliko slika se vidi (responsive) */
+function getVisible() {
+  if (window.innerWidth <= 480) return 1;
+  if (window.innerWidth <= 768) return 2;
+  return 3;
+}
+
+/* pomjeranje */
+function updateSlider() {
+  const visible = getVisible();
+  track.style.transform = `translateX(-${index * (100 / visible)}%)`;
+}
+
+/* next */
+function nextSlide() {
+  const visible = getVisible();
+  if (index < images.length - visible) {
+    index++;
+  } else {
+    index = 0; // loop
+  }
+  updateSlider();
+}
+
+/* prev */
+function prevSlide() {
+  const visible = getVisible();
+  if (index > 0) {
+    index--;
+  } else {
+    index = images.length - visible;
+  }
+  updateSlider();
+}
+
+/* klik */
+document.querySelector(".next").onclick = nextSlide;
+document.querySelector(".prev").onclick = prevSlide;
+
+/* autoplay */
+function startAutoplay() {
+  autoplayInterval = setInterval(nextSlide, 3000);
+}
+
+function stopAutoplay() {
+  clearInterval(autoplayInterval);
+}
+
+/* pauza na hover */
+const slider = document.querySelector(".hero-right");
+
+slider.addEventListener("mouseenter", stopAutoplay);
+slider.addEventListener("mouseleave", startAutoplay);
+
+/* resize fix */
+window.addEventListener("resize", updateSlider);
+
+/* start */
+startAutoplay();
+</script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

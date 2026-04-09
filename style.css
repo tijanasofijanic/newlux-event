@@ -2329,46 +2329,60 @@ html {
 
 
 /* DESNA STRANA */
+
+
 .hero-right {
   width: 60%;
-  overflow: hidden;
   position: relative;
 }
 
-/* TRACK */
+/* prozor */
+.slider-window {
+  overflow: hidden;
+  height: 100%;
+}
+
+/* track */
 .slider-track {
   display: flex;
+  transition: transform 0.5s ease;
   height: 100%;
-  animation: scrollSlider 10s linear infinite;
 }
 
-/* SLIKE */
+/* slike */
 .slider-track img {
-  width: 33.33%;
+  width: calc(100% / 3);
   height: 100%;
   object-fit: cover;
-  margin-right: 10px;
+  padding: 5px;
+  border-radius: 12px;
 }
 
-/* ANIMACIJA */
-@keyframes scrollSlider {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+/* strelice */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.4);
+  border: none;
+  font-size: 28px;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+  backdrop-filter: blur(6px);
+  border-radius: 50%;
 }
-.slider-track img {
-  width: 33.33%;
-  height: 100%;
-  object-fit: cover;
-  margin-right: 15px;
-  border-radius: 10px;
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
 }
 
 
-/* DESKTOP (ostaje isto) */
+/* DESKTOP  */
 .hero-slider {
   display: flex;
   height: 100vh;
@@ -2433,3 +2447,7 @@ html {
 .submenu ul {
   padding-left: 15px;
 }
+
+
+
+
