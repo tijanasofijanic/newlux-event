@@ -32,40 +32,81 @@
 
 </head>
 
-<body class="bg-primary">
-
-  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-    <symbol xmlns="http://www.w3.org/2000/svg" id="clock" viewBox="0 0 24 24">
-      <path fill="currentColor" fill-rule="evenodd"
-        d="M12 2.75a9.25 9.25 0 1 0 0 18.5a9.25 9.25 0 0 0 0-18.5M1.25 12C1.25 6.063 6.063 1.25 12 1.25S22.75 6.063 22.75 12S17.937 22.75 12 22.75S1.25 17.937 1.25 12M12 7.25a.75.75 0 0 1 .75.75v3.69l2.28 2.28a.75.75 0 1 1-1.06 1.06l-2.5-2.5a.75.75 0 0 1-.22-.53V8a.75.75 0 0 1 .75-.75"
-        clip-rule="evenodd" />
-    </symbol>
-  </svg>
-
-  <div class="preloader">
-    <div class="loader"></div>
-  </div>
-
-  <header id="header" class="site-header bg-darker"></header>
-
-  <!-- Hero Section -->
-  <section class="py-5 bg-white">
+<body>
+    <!-- HEADER -->
+<header class="lux-header">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-lg">
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-10">
-          <h1 class="display-4 fw-normal mb-4" style="color: var(--primary-color);">Venčanja</h1>
-          <p class="lead text-muted">Vaš najlepši dan zaslužuje savršen prostor i nezaboravnu atmosferu</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
+      <!-- LOGO -->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/luxlogo.png" class="logo" alt="logo">
+      </a>
+
+      <!-- HAMBURGER -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLux">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- NAV -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarLux">
+        <ul class="navbar-nav text-uppercase">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Početna</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">O nama</a>
+          </li>
+
+          <!-- DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              Ponuda menija
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="menusvadba.html">Menu - svadba</a></li>
+              <li><a class="dropdown-item active" href="menuproslava.html">Menu - proslava</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Galerija</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+
+          <li class="nav-item">
+           <a class="nav-link" href="contact.html">Kontakt</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- CTA dugme -->
+      <a href="tel:+381607171153" class="btn btn-gold d-none d-lg-block">
+        Rezervacija
+      </a>
+
+    </div>
+  </nav>
+</header>
+ <!-- HERO -->
+<section class="text-center py-5 bg-white">
+  <div class="container">
+    <h1 class="fw-bold">Venčanja</h1>
+    <p class="text-muted">Vaš najlepši dan zaslužuje savršen prostor i nezaboravnu atmosferu</p>
+  </div>
+</section>
   <!-- Main Content -->
-  <section class="py-5 bg-white">
+  <section class="rodjendan" style="padding-bottom: 48px;">
     <div class="container-lg">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <div class="mb-5">
+            <div class="col-lg-8 mx-auto">
+   <div class="mb-3 d-flex justify-content-center">
             <img src="images/team2.jpg" alt="Venčanja" class="img-fluid rounded mb-4">
           </div>
 
@@ -163,42 +204,95 @@
               </li>
             </ul>
 
-            <div class="alert alert-light border-primary mt-5" role="alert">
-              <h4 class="alert-heading">Rezervišite vaš termin</h4>
-              <p class="mb-0">Kontaktirajte nas danas i zajedno ćemo kreirati svadbu vaših snova. Organizujemo degustacije menija i obilaske prostora.</p>
-              <hr>
-              <a href="contact.html" class="btn btn-primary me-2">Kontaktirajte nas</a>
-              <a href="menusvadba.html" class="btn btn-outline-primary">Pogledajte menije</a>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- CTA Section -->
 
-  <footer id="footer" class="bg-darker"></footer>
+<section class="cta text-center">
+  <div class="container">
+    <h2 class="mb-3">Rezervišite vaš termin</h2>
+    <p class="mb-4">
+    Kontaktirajte nas danas i zajedno ćemo kreirati svadbu vaših snova
+    </p>
+    <a href="tel:+381607171153" class="btn btn-light btn-lg px-5" style="color:white">
+     KONTAKTIRAJTE NAS
+    </a>
+  </div>
+</section>
 
-  <!-- jQuery -->
-  <script src="js/jquery-1.11.0.min.js"></script>
+<!-- FOOTER -->
+<div id="footer"></div>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
+<script>
+  fetch("footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+      <!-- Floating Chat Widget -->
+<div class="chat-widget">
+  <div class="chat-button" onclick="toggleChat()">
+    <iconify-icon icon="mdi:phone-in-talk" class="chat-icon"></iconify-icon>
+  </div>
 
-  <!-- Custom plugins script -->
-  <script type="text/javascript" src="js/plugins.js"></script>
+  <div class="chat-box" id="chatBox">
 
-  <!-- Main JavaScript file -->
-  <script type="text/javascript" src="js/script.js"></script>
 
-  <!-- Header and Footer -->
-  <script src="js/header.js"></script>
-  <script src="js/footer.js"></script>
+     <div class="chat-body">
 
-  <!-- Iconify for easy usage of SVG icons with <iconify-icon> tag -->
-  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+      <a href="tel:+381607171153" class="chat-option call">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.98-.98a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg> POZOVI
+      </a>
 
+      <a href="https://wa.me/381607171153" target="_blank" class="chat-option whatsapp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"></path>
+        </svg> WHATSAPP
+      </a>
+
+      <a href="viber://chat?number=%2B381607171153" class="chat-option viber">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M11.4 0C6.15.35 1.75 3.9.55 8.95c-.5 2.1-.5 4.35 0 6.45.85 3.6 3.5 6.65 7 8.05v2.9c0 .35.4.55.65.3l2.9-2.9c.15 0 .25.05.4.05 1.25 0 2.5-.2 3.7-.55 3.85-1.15 6.75-4.35 7.45-8.3.85-4.8-1.2-9.6-5.2-12.2C15.7.35 13.55-.15 11.4 0zm4.1 16.3c-.5.55-1.1.8-1.6.85-.1 0-.2.05-.3 0-1-.35-1.95-.85-2.8-1.5-1.35-1-2.5-2.3-3.3-3.75-.45-.8-.8-1.65-.9-2.55-.05-.7.2-1.4.7-1.9.25-.25.55-.4.9-.4.25 0 .45.1.6.3l1.3 1.8c.2.25.2.6 0 .85l-.5.6c-.1.1-.1.25-.05.35.4.85 1.05 1.6 1.8 2.15.3.2.6.4.95.55.15.05.3 0 .4-.1l.55-.65c.2-.25.5-.3.75-.15l1.85 1.05c.3.15.4.5.25.8z"></path>
+        </svg> VIBER
+      </a>
+    </div>
+  </div>
+</div>
+<script>
+  function toggleChat() {
+    const box = document.getElementById("chatBox");
+    box.style.display = box.style.display === "block" ? "none" : "block";
+  }
+</script>
+
+
+    <!-- jQuery library used for DOM manipulation and plugin support -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+
+    <!-- Swiper.js library for responsive sliders and carousels -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Bootstrap 5 JavaScript bundle (includes Popper for tooltips & dropdowns) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom plugins script (for animations, interactions, etc.) -->
+    <script type="text/javascript" src="js/plugins.js"></script>
+
+    <!-- Main JavaScript file for this template’s custom functionality -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <!-- Iconify for easy usage of SVG icons with <iconify-icon> tag -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 
 </html>
