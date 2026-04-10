@@ -122,8 +122,8 @@
    <!-- HERO -->
 <section class="text-center py-5 bg-white">
   <div class="container">
-    <h1 class="fw-bold">Izaberite svoj savršen meni</h1>
-    
+   
+     <h1 class="fw-bold">Izaberite svoj savršen meni</h1>
   </div>
 </section>
 
@@ -994,7 +994,9 @@
 
     <!-- Iconify for easy usage of SVG icons with <iconify-icon> tag -->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-
+<div class="scroll-top" id="scrollTopBtn">
+  <iconify-icon icon="mdi:arrow-up"></iconify-icon>
+</div>
     <!-- Floating Chat Widget -->
 <div class="chat-widget">
   <div class="chat-button" onclick="toggleChat()">
@@ -1078,6 +1080,23 @@ tabs.forEach(tab => {
 
 });
 </script>
+<script>
+const scrollBtn = document.getElementById("scrollTopBtn");
 
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 400) { // pojavi se nakon malo skrola
+    scrollBtn.classList.add("show");
+  } else {
+    scrollBtn.classList.remove("show");
+  }
+});
+
+scrollBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+</script>
   </body>
 </html>
