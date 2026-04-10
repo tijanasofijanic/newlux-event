@@ -2516,7 +2516,8 @@ html {
 
 /* CTA dugme ako ga doda na dnu */
 .menu-cta-wrap {
-  margin-top: 28px;
+
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -2616,11 +2617,11 @@ html {
 }
 
 .menu-tab-btn {
-  border: none;
+  border: 1px solid #b8965a;
   padding: 10px 18px;
   border-radius: 999px;
-  background: linear-gradient(135deg, #e2bf73, #c79a45);
-  color: #fff;
+  background-color: white;
+  color: #7d7266;
   font-weight: 600;
   cursor: pointer;
   white-space: nowrap;
@@ -2628,7 +2629,8 @@ html {
 
 /* ACTIVE */
 .menu-tab-btn.active {
-  background: linear-gradient(135deg, #b78b3c, #8f6928);
+  background: linear-gradient(135deg, #b8965a, #d0ab67, #f0d48a);
+  color: white;
 }
 
 /* BEZ HOVER */
@@ -2664,5 +2666,13 @@ html {
   }
 
 }
+
+
+
+
+
+
+
+
 
 
