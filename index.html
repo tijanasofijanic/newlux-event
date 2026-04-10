@@ -53,8 +53,6 @@
   <!-- GLIGHTBOX  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
-  <!-- SWIPER  -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/vendor.css">
@@ -603,29 +601,32 @@ infoBoxes.forEach(box => {
   observerInfo.observe(box);
 });
 </script>
+<!-- SWIPER JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <script>
   const testimonialSwiper = new Swiper(".testimonials-slider", {
-  slidesPerView: 3,
-  spaceBetween: 20,
-  loop: true,
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
 
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
 
-  breakpoints: {
-    0: {
-      slidesPerView: 1
-    },
-    768: {
-      slidesPerView: 2
-    },
-    992: {
-      slidesPerView: 3
+    breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 2
+      },
+      992: {
+        slidesPerView: 3
+      }
     }
-  }
-});
+  });
 </script>
 <script>
 const track = document.querySelector(".slider-track");
