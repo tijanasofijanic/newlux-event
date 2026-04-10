@@ -2546,56 +2546,60 @@ html {
 
 /* mobilni */
 @media (max-width: 767px) {
+
+  /* container fix (bootstrap) */
+  .menu-section .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* FULL WIDTH kartica */
   .menu-card {
-    margin: 20px 12px;
-    padding: 10px;
-    border-radius: 20px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;                 /* uklanja razmak */
+    padding: 12px;
+    border-radius: 0;          /* full width look */
   }
 
-  .menu-card::before {
-    inset: 10px;
-    border-radius: 16px;
-  }
-
+  /* uklanja unutrašnje okvire */
+  .menu-card::before,
   .menu-card::after {
-    inset: 18px;
-    border-radius: 12px;
+    display: none;
   }
 
   .menu-card__inner {
-    padding: 18px 16px 24px;
+    padding: 16px;
   }
 
+  /* tipografija */
   .menu-card h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    padding-bottom: 14px;
+    font-size: 22px;
+    margin-bottom: 16px;
   }
 
   .menu-card h2 {
-    font-size: 18px;
-    padding: 10px 12px;
-    margin-bottom: 14px;
+    font-size: 17px;
+    padding: 8px;
   }
 
   .menu-card h3 {
-    font-size: 16px;
-    margin-bottom: 8px;
+    font-size: 15px;
   }
 
   .menu-card li {
-    font-size: 15px;
-    line-height: 1.5;
-    padding: 6px 0 6px 20px;
-  }
-
-  .menu-note {
     font-size: 14px;
-    padding: 10px 12px;
   }
 
-}
+  /* TABOVI */
+  .menu-tabs-wrapper {
+    padding-left: 10px;
+  }
 
+  .menu-tabs {
+    justify-content: flex-start;
+  }
+}
 
 /* TABS */
 .menu-tabs-wrapper {
@@ -2660,3 +2664,5 @@ html {
   }
 
 }
+
+
