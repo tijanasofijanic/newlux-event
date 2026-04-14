@@ -2876,3 +2876,35 @@ html, body {
   }
 
 }
+
+
+.hero-btn {
+  display: block;
+  width: 50%;
+  margin: 40px auto;
+  text-align: center;
+}
+@media (max-width: 768px) {
+
+  .hero-slider {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-left {
+    order: 1;
+  }
+
+  .hero-right {
+    order: 2;
+  }
+
+  .hero-btn {
+    order: 3;
+    width: 80%;
+    display: block;
+    text-align: center;
+  }
+}
+
+
