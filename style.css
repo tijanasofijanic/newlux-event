@@ -2849,3 +2849,28 @@ html, body {
 
 
 
+@media (max-width: 576px) {
+
+  .row.justify-content-center > div {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+
+  .counter {
+    font-size: 1.7rem; 
+    margin-bottom: 2px;
+  }
+
+  .row.justify-content-center p {
+    font-size: 14px;   
+    margin: 0;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .about-img img {
+    height: 220px;   /* smanjena visina */
+    object-fit: cover;
+  }
+}
