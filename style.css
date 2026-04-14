@@ -2870,7 +2870,7 @@ html, body {
 
 @media (max-width: 576px) {
   .about-img img {
-    height: 220px;   /* smanjena visina */
+    height: 260px;   
     object-fit: cover;
   }
 }
