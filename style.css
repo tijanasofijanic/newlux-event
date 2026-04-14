@@ -2498,7 +2498,7 @@ html {
   }
 }
 
-/* ako programerka hoće automatski grid za subsection blokove */
+
 @media (min-width: 860px) {
   .menu-card .menu-section--grid,
   .menu-card .menu-section.grid-sections {
@@ -2775,3 +2775,49 @@ html {
 
   transform: translateY(-3px) scale(1.05);
 }
+
+
+/* OUTLINE GOLD dugme */
+.btn-outline-gold {
+  border: 2px solid #b8965a; /* ISTA kao btn-gold gradient */
+  color: #b8965a;            /* zlatni tekst */
+  background: transparent;
+  padding: 10px 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 25px;       /* da bude kao gold dugme */
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+.btn-outline-gold:hover {
+  background: linear-gradient(135deg, #b8965a, #d0ab67, #f0d48a); /* ISTI kao btn-gold */
+  color: white;
+  border-color: transparent;
+}
+
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
