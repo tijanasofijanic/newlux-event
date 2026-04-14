@@ -2362,9 +2362,9 @@ html {
 .menu-card__inner {
   position: relative;
   z-index: 1;
-  padding: 28px 28px 34px;
+
   color: var(--menu-text);
-  font-family: Georgia, "Times New Roman", serif;
+
 }
 
 .menu-card h1,
@@ -2396,7 +2396,7 @@ html {
   justify-content: center;
   gap: 10px;
   text-align: center;
-  font-size: clamp(20px, 2.5vw, 30px);
+  font-size: clamp(20px, 2.5vw, 26px);
   color: var(--menu-gold-dark);
   margin-bottom: 18px;
   padding: 12px 18px;
@@ -2404,16 +2404,20 @@ html {
   border-bottom: 1px solid var(--menu-line);
   background: linear-gradient(180deg, rgba(183,139,60,0.08), rgba(183,139,60,0.03));
   border-radius: 14px;
+  text-transform: uppercase;
 }
 
 .menu-card h3 {
-  font-size: clamp(17px, 2vw, 22px);
+  font-size: clamp(17px, 2vw, 20px);
   color: var(--menu-text);
   margin-bottom: 10px;
-  padding-left: 10px;
+  padding: 10px 0 10px 10px;
   border-left: 3px solid var(--menu-gold);
 }
-
+.menu-card strong {
+  font-size: 14px;   
+  font-style: italic;
+}
 .menu-subsection {
   margin-bottom: 22px;
 }
@@ -2559,7 +2563,7 @@ html {
     width: 100%;
     max-width: 100%;
     margin: 0;                 /* uklanja razmak */
-    padding: 12px;
+    padding: 5px 12px;
     border-radius: 0;          /* full width look */
   }
 
@@ -2691,9 +2695,7 @@ html {
 
 @media (max-width: 767px) {
 
-  .menu-card__inner {
-    padding: 12px;
-  }
+
 
   .menu-card h1 {
     font-size: 20px;
@@ -2779,19 +2781,19 @@ html {
 
 /* OUTLINE GOLD dugme */
 .btn-outline-gold {
-  border: 2px solid #b8965a; /* ISTA kao btn-gold gradient */
-  color: #b8965a;            /* zlatni tekst */
+  border: 2px solid #b8965a; 
+  color: #b8965a;            
   background: transparent;
   padding: 10px 22px;
   font-weight: 600;
   text-transform: uppercase;
-  border-radius: 25px;       /* da bude kao gold dugme */
+  border-radius: 25px;       
   transition: all 0.3s ease;
 }
 
 /* HOVER */
 .btn-outline-gold:hover {
-  background: linear-gradient(135deg, #b8965a, #d0ab67, #f0d48a); /* ISTI kao btn-gold */
+  background: linear-gradient(135deg, #b8965a, #d0ab67, #f0d48a); 
   color: white;
   border-color: transparent;
 }
@@ -2814,6 +2816,8 @@ html {
     text-align: center;
   }
 }
+
+
 
 
 html, body {
