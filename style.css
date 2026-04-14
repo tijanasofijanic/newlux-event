@@ -1850,6 +1850,7 @@ iconify-icon.video-icon {
   border-radius: 15px;
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(10px);
+  
 }
 
 .testimonial-text {
