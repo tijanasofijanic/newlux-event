@@ -2816,8 +2816,13 @@ html {
 }
 
 
+* {
+  outline: 1px solid red;
+}
 
-
+html, body {
+  overflow-x: hidden;
+}
 
 
 
