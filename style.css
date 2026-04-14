@@ -1706,7 +1706,6 @@ iconify-icon.video-icon {
 .info-box {
   background: rgba(255,255,255,0.03);
   backdrop-filter: blur(8px);
-  padding: 30px 20px;
   border-radius: 15px;
   /* animacija */
   opacity: 0;
@@ -1728,9 +1727,9 @@ iconify-icon.video-icon {
 }
 
 .info-icon {
-  font-size: 55px;
+  font-size: 38px;
   color: #00303d;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .info-box h5 {
