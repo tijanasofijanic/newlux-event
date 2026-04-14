@@ -2655,6 +2655,10 @@ html {
 /* MOBILE */
 @media (max-width: 767px) {
 
+  .fw-bold {
+    font-size: 20px;
+  }
+
   .menu-tabs-wrapper {
     overflow: visible;
     padding: 0 15px;
