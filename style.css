@@ -2617,6 +2617,7 @@ html {
   gap: 10px;
   justify-content: center;
   min-width: max-content;
+  
 
 }
 
@@ -2656,38 +2657,39 @@ html {
 
   .menu-tabs-wrapper {
     overflow: visible;
-    padding: 0 10px;
-  }
-
-  .menu-tabs {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 u redu */
-    gap: 8px;
-    min-width: 100%;
-  }
-
-  .menu-tab-btn {
-    padding: 8px 10px;
-    font-size: 12px;
+    padding: 0 15px;
     text-align: center;
   }
-  .menu-cta-wrap{
-    padding-top: 28px;
-  }
-}
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-  .menu-card {
-    max-width: 90%;
-  }
 
   .menu-tabs {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;   /* jedan ispod drugog */
+    align-items: center;      /* centriranje */
+    gap: 10px;
     width: 100%;
   }
 
+  .menu-tab-btn {
+    width: 100%;              /* puni širinu */
+    max-width: 420px;         /* da ne budu preširoki */
+    padding: 10px 14px;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  /* tekst ispod tabova */
+  .menu-note-mobile {
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    font-weight: 300;
+    color: #8a7a64;
+    margin-top: 10px;
+  }
+
+  .menu-cta-wrap{
+    padding-top: 28px;
+  }
 }
 
 
