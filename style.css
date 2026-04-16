@@ -2827,11 +2827,16 @@ html {
   }
 }
 
-body {
+.about-section, 
+section.py-3.text-white {
   overflow-x: hidden;
+  width: 100%;
 }
-html {
-  overflow-x: visible;
+
+.about-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 
