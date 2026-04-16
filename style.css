@@ -1823,6 +1823,17 @@ iconify-icon.video-icon {
   border-radius: 20px;
 
 }
+.about-section, 
+section.py-3.text-white {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.about-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 .about-img img {
   width: 100%;
@@ -2827,17 +2838,7 @@ html {
   }
 }
 
-.about-section, 
-section.py-3.text-white {
-  overflow-x: hidden;
-  width: 100%;
-}
 
-.about-img img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
 
 
 .map-iframe {
@@ -2865,10 +2866,7 @@ section.py-3.text-white {
 
 @media (max-width: 576px) {
 
-  .row.justify-content-center > div {
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
-  }
+  
 
   .counter {
     font-size: 1.7rem; 
