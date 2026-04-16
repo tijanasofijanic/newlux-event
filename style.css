@@ -2827,11 +2827,11 @@ html {
   }
 }
 
-
-
-
-html, body {
+body {
   overflow-x: hidden;
+}
+html {
+  overflow-x: visible;
 }
 
 
