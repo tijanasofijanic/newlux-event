@@ -1628,11 +1628,13 @@ iconify-icon.video-icon {
   padding: 8px 20px;
   border-radius: 25px;
   transition: 0.3s;
+  border:1px solid #b8965a;
 }
 
 .btn-gold:hover {
   background: linear-gradient(135deg, #f0d48a, #d0ab67, #b8965a);
   color: white;
+  border:1px solid #b8965a;
 }
 
 /* MOBILE */
@@ -2795,6 +2797,7 @@ html {
   text-transform: uppercase;
   border-radius: 25px;       
   transition: all 0.3s ease;
+  border:1px solid #b8965a;
 }
 
 /* HOVER */
@@ -2802,6 +2805,7 @@ html {
   background: linear-gradient(135deg, #b8965a, #d0ab67, #f0d48a); 
   color: white;
   border-color: transparent;
+  
 }
 
 
