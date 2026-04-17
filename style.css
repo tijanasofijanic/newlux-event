@@ -61,7 +61,7 @@ body {
   letter-spacing: 0.40px;
   color: var(--dark-color);
   margin: 0;
-  overflow-x: hidden;
+
 }
 
 
@@ -1573,7 +1573,7 @@ iconify-icon.video-icon {
 }
 /* LOGO */
 .lux-header .logo {
-  width: 150px;
+  width: 100px;
 }
 
 /* NAV LINKOVI */
@@ -1833,15 +1833,11 @@ section.py-3.text-white {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-.about-img img {
   width: 100%;
   height: 400px;
   object-fit: cover;
   transition: 0.5s;
   box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-
 }
 
 .about-img img:hover {
