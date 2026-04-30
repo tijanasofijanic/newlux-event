@@ -2915,3 +2915,235 @@ html {
 }
 
 
+
+/* ===== WEDDING GIFT SECTION ===== */
+.wedding-gift {
+  background: #f6f2ea;
+  padding: 80px 0;
+}
+
+/* WRAPPER */
+.gift-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* LEFT */
+.gift-text {
+  flex: 1;
+}
+
+/* BADGE */
+.gift-badge {
+  display: inline-block;
+  background: rgba(183,139,60,0.12);
+  color: #b8965a;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* TITLE */
+.gift-text h2 {
+  font-size: 40px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  color: #1e1e1e;
+}
+
+/* SUBTITLE */
+.gift-subtitle {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.gift-subtitle strong {
+  color: #b8965a;
+}
+
+/* DESCRIPTION */
+.gift-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* HIGHLIGHT */
+.gift-highlight {
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* BUTTON */
+.gift-btn {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+/* NOTE */
+.gift-note {
+  font-size: 13px;
+  color: #777;
+}
+
+/* VIDEO */
+.gift-video {
+  flex: 1;
+}
+
+.video-box {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+  border: 2px solid rgba(183,139,60,0.3);
+}
+
+.video-box video {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 992px) {
+
+  .gift-wrapper {
+    flex-direction: column;
+  }
+
+  .gift-text {
+    text-align: center;
+  }
+
+  .gift-text h2 {
+    font-size: 28px;
+  }
+
+  .gift-video {
+    order: 2;
+    width: 100%;
+  }
+
+  .gift-btn {
+    width: 100%;
+  }
+}
+
+
+/* ===== WHY NEWLUX ===== */
+.why-newlux {
+  position: relative;
+  background: url("images/background-wedding.png") center/cover no-repeat;
+  padding: 90px 0;
+  color: white;
+  overflow: hidden;
+}
+
+/* TAMNI OVERLAY */
+.why-newlux .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+/* CONTENT */
+.why-newlux .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* TITLE */
+.why-newlux h2 {
+  color:white;
+  font-size: 36px;
+
+}
+
+
+/* DIVIDER */
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 50px;
+  color: #d0ab67;
+}
+
+.divider span {
+  width: 60px;
+  height: 1px;
+  background: #d0ab67;
+}
+
+/* GRID */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* ITEM */
+.why-item {
+  display: flex;
+  flex-direction: column;   /* 👈 KLJUČNO */
+  align-items: center;      /* centriranje */
+  text-align: center;
+  gap: 10px;                /* razmak između ikone i teksta */
+  transition: 0.3s;
+}
+.why-item .icon {
+  font-size: 42px;
+  color: #d0ab67;
+  margin-bottom: 5px;
+}
+
+.why-item h4 {
+  margin: 0;
+}
+
+.why-item p {
+  margin: 0;
+}
+
+.why-item:hover {
+  transform: translateY(-5px);
+}
+
+/* ICON */
+.why-item .icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #d0ab67;
+}
+
+/* TITLE */
+.why-item h4 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.why-item p {
+  font-size: 14px;
+  color: rgba(255,255,255,0.8);
+}
+
+@media (max-width: 992px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-newlux h2 {
+    font-size: 26px;
+  }
+}
+
