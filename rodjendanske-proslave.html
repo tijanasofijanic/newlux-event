@@ -18,6 +18,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+
   <!-- Swiper slider CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
@@ -272,20 +276,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </span>
 
         <h2 class="vip-benefits-title">
-            5 EKSKLUZIVNIH <br>
-            POKLONA KOJE DOBIJA <br>
+            5 EKSKLUZIVNIH 
+            POKLONA KOJE <br>DOBIJA 
             SVAKI SLAVLJENIK
         </h2>
 
         <p class="vip-benefits-description">
-            U New Lux-u ne dobijate samo salu. Dobijate ekskluzivne
-            poklone i pažljivo osmišljene detalje koji vašu proslavu
-            čine jedinstvenom – potpuno besplatno.
+            U New Lux-u ne dobijate samo salu. Dobijate ekskluzivne poklone i pažljivo
+            osmišljene detalje koji vašu proslavu čine jedinstvenom – potpuno besplatno.
         </p>
 
         <div class="vip-benefits-grid">
 
-            <div class="vip-benefit-box">
+            <!-- PRVI RED -->
+
+            <div class="vip-benefit-box vip-benefit-large">
 
                 <div class="vip-benefit-icon">
                     <i class="fa-solid fa-phone"></i>
@@ -301,6 +306,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             </div>
 
+            <div class="vip-benefit-box vip-benefit-large">
+
+                <div class="vip-benefit-icon">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+
+                <h3 class="vip-benefit-heading">
+                    Besplatna dekoracija
+                </h3>
+
+                <p class="vip-benefit-text">
+                    Dekoracija po izboru slavljenika, prilagođena temi i željenom stilu proslave.
+                </p>
+
+            </div>
+
+            <!-- DRUGI RED -->
+
+            <div class="vip-benefit-box">
+
+                <div class="vip-benefit-icon">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+
+                <h3 class="vip-benefit-heading">
+                    Svetleći broj i foto kutak
+                </h3>
+
+                <p class="vip-benefit-text">
+                    Idealna pozadina za fotografije koje će svi želeti da podele.
+                </p>
+
+            </div>
+
             <div class="vip-benefit-box">
 
                 <div class="vip-benefit-icon">
@@ -308,11 +347,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
 
                 <h3 class="vip-benefit-heading">
-                    360 Video Booth
+                    Photo Booth
                 </h3>
 
                 <p class="vip-benefit-text">
-                    Profesionalni video snimci koji ostaju kao uspomena svim gostima.
+                    Gosti dobijaju zabavne fotografije koje nose kući kao uspomenu sa proslave.
                 </p>
 
             </div>
@@ -320,48 +359,101 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="vip-benefit-box">
 
                 <div class="vip-benefit-icon">
-                    <i class="fa-solid fa-gift"></i>
+                    <i class="fa-solid fa-music"></i>
                 </div>
 
                 <h3 class="vip-benefit-heading">
-                    Poklon iznenađenja
+                    DJ i trubači
                 </h3>
 
                 <p class="vip-benefit-text">
-                    Svaki slavljenik dobija poseban poklon od naše sale.
+                    Atmosfera koja podiže proslavu i stvara uspomene koje se dugo prepričavaju.
                 </p>
 
             </div>
 
-            <div class="vip-benefit-box">
+        </div>
 
-                <div class="vip-benefit-icon">
-                    <i class="fa-solid fa-image"></i>
-                </div>
+        <div class="vip-benefits-button">
 
-                <h3 class="vip-benefit-heading">
-                    Foto kutak
-                </h3>
+            <a href="#kontakt" class="vip-benefits-btn">
+                PROVERITE SLOBODAN TERMIN
+            </a>
 
-                <p class="vip-benefit-text">
-                    Dekorisan prostor za fotografisanje sa prijateljima.
-                </p>
+        </div>
 
+    </div>
+
+</section>
+
+<section class="video-showcase-section">
+
+    <div class="video-showcase-container">
+
+        <span class="video-showcase-subtitle">
+            VIDEO 1
+        </span>
+
+        <h2 class="video-showcase-title">
+            Sve što vas očekuje na dan proslave
+        </h2>
+
+        <p class="video-showcase-description">
+            Pogledajte poklone, pogodnosti i pažljivo osmišljene detalje koji vašu
+            punoletstvo u New Lux-u čine zaista posebnim.
+        </p>
+
+        <div class="video-card">
+
+            <!-- Badge -->
+
+            <div class="video-badge">
+                <span class="video-dot"></span>
+                VIDEO 1
             </div>
 
-            <div class="vip-benefit-box">
+            <!-- Duration -->
 
-                <div class="vip-benefit-icon">
-                    <i class="fa-solid fa-champagne-glasses"></i>
+            <div class="video-duration">
+                1:12
+            </div>
+
+            <!-- Slika -->
+
+            <img src="images/rodjendani/slika-video-2.webp" alt="Video">
+
+            <!-- Overlay -->
+
+            <div class="video-overlay"></div>
+
+            <!-- Play -->
+
+            <a href=""
+               class="video-play-btn glightbox">
+
+                <i class="fa-solid fa-play"></i>
+
+            </a>
+
+            <!-- Bottom -->
+
+            <div class="video-info">
+
+                <div>
+
+                    <span class="video-small-title">
+                        SVE ŠTO VAS OČEKUJE NA DAN PROSLAVE
+                    </span>
+
+                    <h3>
+                        New Lux Events Center
+                    </h3>
+
                 </div>
 
-                <h3 class="vip-benefit-heading">
-                    Specijalno posluženje
-                </h3>
-
-                <p class="vip-benefit-text">
-                    Dodatni detalji koji upotpunjuju vašu proslavu.
-                </p>
+                <span class="video-quality">
+                    HD • 1080P
+                </span>
 
             </div>
 
@@ -371,8 +463,240 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </section>
 
+<section class="offer-section">
+    <span class="subtitle">NAŠA PONUDA</span>
+    <h2>Proslave koje se pamte</h2>
 
+    <div class="offer-grid">
 
+        <div class="offer-card">
+            <img src="images/rodjendani/slavljenica-nazdravljanje.webp" alt="">
+            <div class="overlay"></div>
+
+            <div class="content">
+                <h3>18. rođendani</h3>
+                <p>Emocija punoletstva — najlepše veče godine.</p>
+            </div>
+        </div>
+
+        <div class="offer-card">
+            <img src="images/rodjendani/slavljenica.webp" alt="">
+            <div class="overlay"></div>
+
+            <div class="content">
+                <h3>Elegancija slavljenice</h3>
+                <p>Portret trenutka — svetlo, dekoracija, uspomena.</p>
+            </div>
+        </div>
+
+        <div class="offer-card">
+            <img src="images/rodjendani/atmosfera-sa-rodjendana.webp" alt="">
+            <div class="overlay"></div>
+
+            <div class="content">
+                <h3>Spektakl atmosfere</h3>
+                <p>Vatromet, trubači i luksuzan enterijer koji se pamti.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="venue-showcase">
+
+    <div class="venue-photo">
+
+        <img src="images/rodjendani/slavljenica-sece-tortu.webp" alt="">
+
+        <div class="experience-badge">
+            <span class="experience-number">10+</span>
+            <span class="experience-label">GODINA ISKUSTVA</span>
+        </div>
+
+    </div>
+
+    <div class="venue-details">
+
+        <span class="section-label">ZAŠTO BAŠ NEW LUX</span>
+
+        <h2 class="section-title">
+            Svaki detalj promišljen.<br>
+            Svaki trenutak vaš.
+        </h2>
+
+        <p class="section-text">
+            Više od decenije stvaramo najljepše proslave punoljetstva.
+            Vaše veče vodimo od prvog dogovora do posljednje pesme.
+        </p>
+
+        <div class="benefits-grid">
+
+            <div class="benefit-item">
+                <span class="benefit-dot"></span>
+
+                <div class="benefit-content">
+                    <h4 class="benefit-title">Premium sala</h4>
+                    <p class="benefit-description">
+                        Luksuzan enterijer za do 350 gostiju.
+                    </p>
+                </div>
+            </div>
+
+            <div class="benefit-item">
+                <span class="benefit-dot"></span>
+
+                <div class="benefit-content">
+                    <h4 class="benefit-title">Dekoracija</h4>
+                    <p class="benefit-description">
+                        Tematska dekoracija prilagođena vašim željama.
+                    </p>
+                </div>
+            </div>
+
+            <div class="benefit-item">
+                <span class="benefit-dot"></span>
+
+                <div class="benefit-content">
+                    <h4 class="benefit-title">Parking</h4>
+                    <p class="benefit-description">
+                        Besplatan parking za sve goste.
+                    </p>
+                </div>
+            </div>
+
+            <div class="benefit-item">
+                <span class="benefit-dot"></span>
+
+                <div class="benefit-content">
+                    <h4 class="benefit-title">Profesionalno osoblje</h4>
+                    <p class="benefit-description">
+                        Iskusan tim koji vodi računa o svakom detalju.
+                    </p>
+                </div>
+            </div>
+
+            <div class="benefit-item">
+                <span class="benefit-dot"></span>
+
+                <div class="benefit-content">
+                    <h4 class="benefit-title">Hrana</h4>
+                    <p class="benefit-description">
+                        Raznovrsni meniji od finger fooda do svečanih večera.
+                    </p>
+                </div>
+            </div>
+
+            <div class="benefit-item">
+                <span class="benefit-dot"></span>
+
+                <div class="benefit-content">
+                    <h4 class="benefit-title">Organizacija</h4>
+                    <p class="benefit-description">
+                        Muzika, ozvučenje i koordinacija događaja.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="moments-showcase">
+
+    <span class="moments-label">GALERIJA</span>
+
+    <h2 class="moments-heading">
+        Stvarne proslave, stvarni trenuci
+    </h2>
+
+    <p class="moments-description">
+        Mali pregled najljepših trenutaka iz New Lux Events Center-a.
+        Kompletnu galeriju rođendanskih proslava pogledajte na posebnoj stranici.
+    </p>
+
+    <div class="moments-layout">
+
+        <div class="moment-card featured-photo">
+            <img src="images/rodjendani/slika-video-2.webp" alt="">
+        </div>
+
+        <div class="moment-card top-photo">
+            <img src="images/rodjendani/slavljenica-nazdravljanje.webp" alt="">
+        </div>
+
+        <div class="moment-card top-photo">
+            <img src="images/rodjendani/slavljenica-sece-tortu.webp" alt="">
+        </div>
+
+        <div class="moment-card bottom-photo">
+            <img src="images/rodjendani/slavljenica.webp" alt="">
+        </div>
+
+        <div class="moment-card bottom-photo">
+            <img src="images/rodjendani/slavljenica-rodjendan.webp" alt="">
+        </div>
+
+        <div class="moment-card portrait-photo">
+            <img src="images/rodjendani/atmosfera-sa-rodjendana.webp" alt="">
+        </div>
+
+    </div>
+
+    <a href="#" class="moments-button">
+        POGLEDAJTE KOMPLETNU GALERIJU
+    </a>
+
+</section>
+
+<section class="cinema-section">
+
+    <span class="cinema-badge">VIDEO 3</span>
+
+    <h2 class="cinema-title">
+        Doček koji se pamti
+    </h2>
+
+    <p class="cinema-text">
+        Vatromet, trubači i trenutak koji pretvara punoletstvo u pravi spektakl.
+    </p>
+
+    <div class="cinema-player">
+
+        <img src="images/rodjendani/atmosfera-sa-rodjendana.webp" alt="">
+
+        <div class="cinema-shadow"></div>
+
+        <div class="clip-label">
+            <span class="clip-indicator"></span>
+            VIDEO 3
+        </div>
+
+        <div class="clip-time">
+            0:58
+        </div>
+
+        <div class="clip-play">
+            ▶
+        </div>
+
+        <div class="clip-info">
+            <span class="clip-category">
+                DOČEK KOJI SE PAMTI
+            </span>
+
+            <h3 class="clip-name">
+                New LUX Events Center
+            </h3>
+        </div>
+
+        <div class="clip-resolution">
+            HD • 1080P
+        </div>
+
+    </div>
+
+</section>
 <section class="celebration-menus">
 
     <div class="celebration-wrapper">
@@ -582,14 +906,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-
-
-
-
-
-
-
-
 <section class="contact-section">
 
     <div class="container">
@@ -678,6 +994,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
 </section>
+
+
 <!-- FOOTER -->
 <div id="footer"></div>
 
@@ -775,6 +1093,11 @@ items.forEach(item => {
     });
 
 });
+</script>
+
+
+<script>
+const lightbox = GLightbox();
 </script>
 </body>
 
