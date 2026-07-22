@@ -2915,13 +2915,57 @@ display: flex;
   }
 }
 
+/* ===== LUXURY WEDDING GIFT FRAME ===== */
 
+.wedding-gift {
+    position: relative;
+    padding: 70px 0;
+    background:#fff;
+}
+
+/* luksuzni okvir oko cele sekcije */
+.gift-wrapper {
+    position:relative;
+    border-radius:30px;
+    padding:50px;
+    background:#ffffff;
+    border:1px solid #00303d;
+    box-shadow:
+    0 25px 70px rgba(0,48,61,0.25),
+    0 0 35px rgba(0,48,61,0.12),
+    inset 0 0 0 1px rgba(212,165,76,0.15);
+    overflow:hidden;
+}
+
+
+
+
+/* VIDEO luksuzni okvir */
+.video-box {
+    border-radius:24px;
+    overflow:hidden;
+    border:1px solid rgba(212,165,76,0.6);
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.25);
+}
+
+
+/* badge */
+.gift-badge {
+    background:linear-gradient(
+        135deg,
+        rgba(212,165,76,0.18),
+        rgba(212,165,76,0.05)
+    );
+    border:1px solid rgba(212,165,76,0.35);
+}
 
 /* ===== WEDDING GIFT SECTION ===== */
 .wedding-gift {
 
   padding: 50px 0;
 }
+
 
 /* WRAPPER */
 .gift-wrapper {
@@ -3085,7 +3129,12 @@ display: flex;
   transform: scale(1.1);
 }
 
-
+@media(max-width:768px){
+    .gift-wrapper{
+        padding:30px 20px;
+        border-radius:20px;
+    }
+}
 
 
 /* ============================
@@ -3487,7 +3536,7 @@ display: flex;
     .birthday18-image{
         height:400px;
         border-radius:22px;
-        margin-top:28px;
+        margin-top:0px;
     }
 
     .birthday18-video-tag{
@@ -4837,6 +4886,10 @@ MOBILE
     margin:120px auto;
     text-align:center;
 }
+.wide-photo{
+    grid-column:3 / 5;
+    grid-row:3 / 5;
+}
 
 .moments-label{
     display: block;
@@ -4973,7 +5026,8 @@ MOBILE
     .featured-photo,
     .top-photo,
     .bottom-photo,
-    .portrait-photo{
+    .portrait-photo,
+    .wide-photo{
         grid-column:auto;
         grid-row:auto;
     }
@@ -5257,7 +5311,7 @@ MOBILE
 }
 
 .gallery-heading h1{
-    font-family:"Dancing Script", serif;
+    font-family:"Cormorant Garamond";
     font-size:66px;
     color:#111;
     margin-bottom:20px;
@@ -5439,7 +5493,7 @@ MOBILE
 
     border:none;
 
-    padding:18px 48px;
+    padding:15px 48px;
 
     border-radius:60px;
 
@@ -5503,13 +5557,13 @@ gap:14px;
 
 padding:15px;
 
-margin-top:45px;
+margin-top:20px;
 
 }
 
 .filter-btn{
 
-padding:22px 10px;
+padding:10px 10px;
 
 }
 
@@ -5529,52 +5583,78 @@ font-size:15px;
 
 
 
-@media(max-width:576px){
+@media (max-width:576px){
 
 .lux-gallery-hero{
+    padding:20px 0 40px;
+}
 
-padding:70px 0;
+.gallery-heading{
+    margin-bottom:15px;
+}
 
+.gallery-subtitle{
+    margin-bottom:8px;
+    font-size:13px;
+    letter-spacing:2px;
 }
 
 .gallery-heading h1{
-
-font-size:40px;
-
+    font-size:34px;
+    margin-bottom:10px;
+    line-height:1.1;
 }
 
 .gallery-heading p{
+    font-size:15px;
+    line-height:1.5;
+    margin-bottom:0;
+}
 
-font-size:17px;
-
+.gallery-decoration{
+    margin-bottom:8px;
 }
 
 .gallery-decoration span{
-
-width:45px;
-
+    width:35px;
 }
 
 .gallery-filter{
+    margin:20px auto 25px;
+    padding:10px;
+    gap:8px;
+    border-radius:18px;
+}
 
-grid-template-columns:repeat(2,1fr);
+.filter-btn{
+    padding:10px 6px;
+    gap:6px;
+    border-radius:14px;
+}
 
-border-radius:24px;
+.filter-btn iconify-icon{
+    font-size:24px;
+}
 
+.filter-btn span{
+    font-size:12px;
+    line-height:1.2;
+}
+
+.luxury-gallery{
+    margin-top:0;
+}
+
+.gallery-item{
+    margin-bottom:0;
 }
 
 .gallery-item a{
-
-border-radius:22px;
-
+    border-radius:12px;
 }
 
-.gallery-button{
-
-width:100%;
-
-padding:16px;
-
+.luxury-gallery img{
+    height:150px;
 }
 
 }
